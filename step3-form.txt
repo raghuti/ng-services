@@ -1,0 +1,42 @@
+    <h3>
+        User Name : {{ user.username }}<br/>
+        User eMail : {{ user.usermail }}<br/>
+        User Age : {{ user.userage }}<br/>
+    </h3>
+    <hr>
+    <form action="#" method="get" name="myForm">
+        <table>
+        <tr>
+            <td>
+                <label for="uname">User Name</label>
+            </td>
+            <td>
+                <input id="uname" #uname type="text" [(ngModel)]="user.username" name="uname" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="umail">User eMail</label>
+            </td>
+            <td>
+                <input id="umail" #umail type="text" [(ngModel)]="user.usermail" name="umail" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="uage">User Age</label>
+            </td>
+            <td>
+                <input id="uage" #uage type="number" [(ngModel)]="user.userage" name="uage" required />
+            </td>
+        </tr>
+        <tr>
+            <td>
+               &nbsp;
+            </td>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+    </form>
